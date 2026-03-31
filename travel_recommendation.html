@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter destination...">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1 class="home-title">Discover Your Next Adventure</h1>
+                <p class="home-description">
+                    Welcome to Travel Recommendations, your ultimate guide to exploring the world. 
+                    Whether you're seeking exotic beaches, historic landmarks, or vibrant cities, 
+                    we help you find the perfect destination for your next journey. 
+                    Explore thousands of recommendations from fellow travelers and plan your unforgettable experience.
+                </p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link facebook" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2 class="about-title">About Us</h2>
+                
+                <div class="company-info">
+                    <p>
+                        Travel Recommendations is a leading platform dedicated to helping travelers discover their perfect destinations. 
+                        Founded in 2020, we have grown to serve millions of users worldwide, providing personalized travel suggestions, 
+                        expert recommendations, and community-driven insights. Our mission is to inspire wanderlust and make travel planning 
+                        effortless, accessible, and enjoyable for everyone.
+                    </p>
+                    <p>
+                        With a team of experienced travel experts, developers, and designers, we combine cutting-edge technology with 
+                        real-world travel knowledge to deliver the best recommendations tailored to your preferences and interests.
+                    </p>
+                </div>
+                
+                <h3 class="team-title">Meet Our Team</h3>
+                
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="member-name">Sarah Johnson</h4>
+                        <p class="member-role">Founder & CEO</p>
+                        <p class="member-bio">Passionate travel enthusiast with 15+ years of experience in tourism and technology.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="member-name">Michael Chen</h4>
+                        <p class="member-role">Chief Technology Officer</p>
+                        <p class="member-bio">Expert in full-stack development and AI-driven recommendation systems.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="member-name">Emma Rodriguez</h4>
+                        <p class="member-role">Head of Content</p>
+                        <p class="member-bio">Creative storyteller with extensive knowledge of global destinations and cultures.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="member-name">David Morrison</h4>
+                        <p class="member-role">Lead Designer</p>
+                        <p class="member-bio">UX/UI specialist focused on creating beautiful and intuitive user experiences.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="member-name">Lisa Park</h4>
+                        <p class="member-role">Travel Expert</p>
+                        <p class="member-bio">Traveled to 80+ countries and dedicated to sharing unique travel insights.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="member-name">James Wilson</h4>
+                        <p class="member-role">Community Manager</p>
+                        <p class="member-bio">Engages with our community and gathers feedback to improve our platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">Contact Us</h2>
+                <p class="contact-subtitle">Have questions or feedback? We'd love to hear from you. Send us a message below!</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Full Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" placeholder="Write your message here..." rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="reset" class="reset-contact-btn">Clear Form</button>
+                </form>
+                
+                <div id="formResponse"></div>
+            </div>
+        </section>
+        
+        <div id="results"></div>
+        
+        <!-- Search Overlay -->
+        <div id="searchOverlay" class="search-overlay"></div>
+    </main>
+    
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
